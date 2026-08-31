@@ -9,46 +9,52 @@
 
   <style>
     .legal-page {
-      padding: 75px 20px 85px;
+      padding: 70px 20px 80px;
       background: #ffffff;
     }
 
-    .legal-content {
+    .legal-title {
+      max-width: 800px;
+      margin: 0 auto 45px;
+      text-align: center !important;
+    }
+
+    .legal-title .section-label {
+      text-align: center !important;
+      margin-bottom: 18px;
+    }
+
+    .legal-title h2 {
+      text-align: center !important;
+      margin: 0;
+    }
+
+    .legal-body {
       max-width: 720px;
       margin: 0 auto;
       text-align: left !important;
     }
 
-    .legal-content .section-label {
-      text-align: center !important;
-      margin-bottom: 18px;
-    }
-
-    .legal-content h2 {
-      text-align: center !important;
-      margin-bottom: 45px;
-    }
-
-    .legal-content h3 {
+    .legal-body p {
       text-align: left !important;
-      margin: 30px 0 10px;
+      margin: 0 0 20px !important;
+      line-height: 1.7 !important;
+      font-size: 16px !important;
+    }
+
+    .legal-body h3 {
+      text-align: left !important;
+      margin: 30px 0 10px !important;
       color: #0b1f33;
       font-size: 20px;
     }
 
-    .legal-content p {
-      text-align: left !important;
-      margin: 0 0 18px;
-      line-height: 1.7;
-      font-size: 16px;
-    }
-
-    .legal-content a {
+    .legal-body a {
       color: #c9a45c;
       text-decoration: none;
     }
 
-    .legal-content a:hover {
+    .legal-body a:hover {
       text-decoration: underline;
     }
   </style>
@@ -70,11 +76,15 @@
 </nav>
 
 <section class="legal-page">
-  <div class="legal-content">
 
+  <!-- Centered title -->
+  <div class="legal-title">
     <p class="section-label">TERMS OF USE</p>
-
     <h2>Terms of Use</h2>
+  </div>
+
+  <!-- Left-aligned content -->
+  <div class="legal-body">
 
     <p>
       By using this website, you agree to use it for lawful purposes and
@@ -103,6 +113,7 @@
     </p>
 
   </div>
+
 </section>
 
 <footer class="footer">
